@@ -1,0 +1,23 @@
+{
+  "name": "vue-wechat-title",
+  "version": "1.0.0",
+  "description": "给Vuejs应用添加在微信页面中动态设置网页标题的功能",
+  "main": "vue-wechat-title.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deboyblog/vue-wechat-title.git"
+  },
+  "keywords": [
+    "Vuejs",
+    "微信导航栏标题"
+  ],
+  "author": "Deboy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deboyblog/vue-wechat-title/issues"
+  },
+  "homepage": "https://github.com/deboyblog/vue-wechat-title#readme"
+}
