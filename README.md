@@ -7,7 +7,7 @@
 npm install vue-wechat-title --save
 ```
 
-### 用法
+### 用法 [demo](https://github.com/deboyblog/vue-wechat-title-demo/tree/use-directive)
 
 ##### ES6
 > main.js
