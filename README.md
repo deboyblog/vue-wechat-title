@@ -1,5 +1,6 @@
 # vue-wechat-title
 为Vuejs SPA设计的动态设置微信网页中标题的指令
+
 ### 安装
 
 ```bash
