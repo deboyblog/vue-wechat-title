@@ -2,7 +2,7 @@
 Vuejs 单页应用在iOS的微信webview(或者其他APP)中 标题不能通过 document.title = xxx 的方式修改
 该插件只为解决该问题而生
 
-经检验 以下APP在iOS中webview访问该方法都能正常更换标题 若有其他APP需要测试 欢迎提issue
+经检验 以下APP在iOS中webview访问该方法都能正常更换标题 若有其他APP需要测试 欢迎提[Issues](https://github.com/deboyblog/vue-wechat-title/issues/new)
 - QQ
 - 微信
 - 支付宝
