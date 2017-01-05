@@ -1,5 +1,12 @@
-# vue-wechat-title
-为Vuejs SPA设计的动态设置微信网页中标题的指令
+### 作用
+Vuejs 单页应用在iOS的微信webview(或者其他APP)中 标题不能通过 document.title = xxx 的方式修改
+该插件只为解决该问题而生
+
+### 效果 (请使用微信扫描打开体验)
+
+![预览](./preview.png)
+
+直接打开: [http://vue-wechat-title.deboy.cn/](http://vue-wechat-title.deboy.cn/)
 
 ### 安装
 
@@ -16,14 +23,12 @@ npm install vue-wechat-title --save
 Vue.use(require('vue-wechat-title'))
 ```
 
-> App.vue **建议全局只使用一次该指令**
+> App.vue **建议全局只使用一次该指令 标题可用wuex或者router中定义 不要多处使用!!**
 
 ```html
 <router-view v-wechat-title="$route.title || 'your-title'"></router-view>
-<!-- 或者任意元素中加 wechat-title 指令 建议将标题放在 route 的定义中 -->
+<!-- 或者任意元素中加 v-wechat-title 指令 建议将标题放在 route 的定义中 -->
 <div v-wechat-title="$route.title || 'your-title'"></div>
 ```
-
-> 或者直接包含(不是单页应用 也用不到这个...)
 
 ### 欢迎提交PR
