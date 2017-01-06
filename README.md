@@ -42,12 +42,43 @@ npm install vue-wechat-title --save
 ```js
 Vue.use(require('vue-wechat-title'))
 ```
+> 路由定义(只截取一部分)
+```js
+// ...
+const routes = [
+  {
+    name: 'Home',
+    path: '/home',
+    meta: {
+      title: '首页'
+    },
+    component: require('../views/Home.vue')
+  },
+  {
+    name: 'Order',
+    path: '/order',
+    meta: {
+      title: '订单'
+    },
+    component: require('../views/Order.vue')
+  },
+  {
+    name: 'UCenter',
+    path: '/ucenter',
+    meta: {
+      title: '用户中心'
+    },
+    component: require('../views/UCenter.vue')
+  }
+]
+// ...
+```
 
 > App.vue **建议全局只使用一次该指令 标题可用vuex或者router中定义 不要多处使用!!**
 
 ```html
 <!-- 任意元素中加 v-wechat-title 指令 建议将标题放在 route 对应meta对象的定义中 -->
-<!--<div v-wechat-title="$route.meta.title"></div>-->
+<div v-wechat-title="$route.meta.title"></div>
 <!--or-->
 <router-view v-wechat-title="$route.meta.title"></router-view>
 ```
