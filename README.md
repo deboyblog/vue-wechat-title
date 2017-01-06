@@ -1,8 +1,16 @@
 ### 作用
-Vuejs 单页应用在iOS的微信webview(或者其他APP)中 标题不能通过 document.title = xxx 的方式修改
-该插件只为解决该问题而生
+Vuejs 单页应用在iOS系统下部分APP的webview中 标题不能通过 document.title = xxx 的方式修改
+该插件只为解决该问题而生(兼容安卓)
 
-### 效果 (请使用微信扫描打开体验) Vuejs1.x实现
+> 已测试APP
+ - 微信
+ - QQ
+ - 支付宝
+ - 淘宝
+
+### 效果 (请使用以上列表中任意一个APP扫码打开体验)
+
+> 不同版本使用方法类似 但是效果是一样的 demo是Vuejs1.x写的
 
 ![预览](./preview.png)
 
@@ -19,10 +27,14 @@ npm install vue-wechat-title@1.0.6 --save
 > Vuejs 2.x
 
 ```bash
-npm install vue-wechat-title@2.0.0 --save
+npm install vue-wechat-title --save
 ```
 
-### 用法 [demo](https://github.com/deboyblog/vue-wechat-title-demo/tree/use-directive)
+### 用法 
+
+> [Vuejs 1.x demo](https://github.com/deboyblog/vue-wechat-title-demo/tree/use-directive)
+
+> [Vuejs 2.x demo](https://github.com/deboyblog/vue-wechat-title-demo/tree/2.0)
 
 ##### ES6
 > main.js
