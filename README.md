@@ -3,6 +3,7 @@ Vuejs 单页应用在iOS系统下部分APP的webview中 标题不能通过 docum
 该插件只为解决该问题而生(兼容安卓)
 
 > 已测试APP
+
  - 微信
  - QQ
  - 支付宝
@@ -43,6 +44,7 @@ npm install vue-wechat-title --save
 Vue.use(require('vue-wechat-title'))
 ```
 > 路由定义(只截取一部分)
+
 ```js
 // ...
 const routes = [
