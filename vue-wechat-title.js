@@ -21,13 +21,8 @@
                 document.body.appendChild(iframe)
             }
         }
-        Vue.directive('wechat-title', {
-            bind: function (title) {
-                setWechatTitle(title)
-            },
-            update: function (newTitle) {
-                setWechatTitle(newTitle)
-            }
+        Vue.directive('wechat-title', function (el, binding) {
+            setWechatTitle(binding.value)
         })
     }
 
