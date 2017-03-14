@@ -86,6 +86,7 @@ const routes = [
 ```
 
 > 自定义加载的图片地址 默认是 ./favicon.ico 可以是相对或者绝对的 该功能目前只做了2.0的适配
+
 ```html
 <div v-wechat-title="$route.meta.title" img-set="/static/logo.png"></div>
 ```
