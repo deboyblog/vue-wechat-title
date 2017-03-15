@@ -4,7 +4,6 @@
       if (title === undefined) {
         return
       }
-      console.log(title, img)
       document.title = title
       var mobile = navigator.userAgent.toLowerCase()
       if (/iphone|ipad|ipod/.test(mobile)) {
