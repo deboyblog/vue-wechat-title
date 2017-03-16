@@ -1,7 +1,7 @@
 (function () {
   function install (Vue) {
     var setWechatTitle = function (title, img) {
-      if (title === undefined) {
+      if (title === undefined || window.document.title === title) {
         return
       }
       document.title = title
