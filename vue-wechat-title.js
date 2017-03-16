@@ -1,7 +1,7 @@
 (function () {
     function install (Vue) {
-        var setWechatTitle = function (title) {
-            if (title === undefined) {
+        var setWechatTitle = function (title, img) {
+            if (title === undefined || window.document.title === title) {
                 return
             }
             document.title = title
@@ -10,7 +10,7 @@
                 var iframe = document.createElement('iframe')
                 iframe.style.display = 'none'
                 // 替换成站标favicon路径或者任意存在的较小的图片即可
-                iframe.setAttribute('src', '/favicon.ico')
+                iframe.setAttribute('src', img || '/favicon.ico')
                 var iframeCallback = function () {
                     setTimeout(function () {
                         iframe.removeEventListener('load', iframeCallback)
@@ -23,10 +23,10 @@
         }
         Vue.directive('wechat-title', {
             bind: function (title) {
-                setWechatTitle(title)
+                setWechatTitle(title, this.el.getAttribute('img-set') || null)
             },
             update: function (newTitle) {
-                setWechatTitle(newTitle)
+                setWechatTitle(newTitle, this.el.getAttribute('img-set') || null)
             }
         })
     }
