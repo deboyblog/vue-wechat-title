@@ -22,7 +22,7 @@ Vuejs 单页应用在iOS系统下部分APP的webview中 标题不能通过 docum
 > Vuejs 1.x
 
 ```bash
-npm install vue-wechat-title@1.0.6 --save
+npm install vue-wechat-title@1.0.7 --save
 ```
 
 > Vuejs 2.x
@@ -85,7 +85,7 @@ const routes = [
 <router-view v-wechat-title="$route.meta.title"></router-view>
 ```
 
-> 自定义加载的图片地址 默认是 ./favicon.ico 可以是相对或者绝对的 该功能目前只做了2.0的适配
+> 自定义加载的图片地址 默认是 ./favicon.ico 可以是相对或者绝对的
 
 ```html
 <div v-wechat-title="$route.meta.title" img-set="/static/logo.png"></div>
