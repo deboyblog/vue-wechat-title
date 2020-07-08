@@ -1,6 +1,6 @@
 {
   "name": "vue-wechat-title",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "给Vuejs单页应用添加在微信页面中动态设置网页标题功能的指令",
   "main": "vue-wechat-title.js",
   "scripts": {
