@@ -9,8 +9,12 @@
       if (/iphone|ipad|ipod/.test(mobile)) {
         var iframe = document.createElement('iframe')
         iframe.style.display = 'none'
-        // 替换成站标favicon路径或者任意存在的较小的图片即可
-        iframe.setAttribute('src', img || 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')
+        // 替换成站标favicon路径或者任意存在的较小的图片即可，支付宝小程序引用原先base64会有安全警告
+        if (/alipay/.test(mobile)) {
+          img && iframe.setAttribute('src', img)
+        } else {
+          iframe.setAttribute('src', img || 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')
+        }
         var iframeCallback = function () {
           setTimeout(function () {
             iframe.removeEventListener('load', iframeCallback)
