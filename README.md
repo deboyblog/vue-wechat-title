@@ -85,7 +85,7 @@ const routes = [
 <router-view v-wechat-title="$route.meta.title"></router-view>
 ```
 
-> 自定义加载的图片地址 默认是 ./favicon.ico 可以是相对或者绝对的
+> 自定义加载的图片地址，默认是一个空的base64图片地址，可以是相对或者绝对的，注意如果要在支付宝App内使用必须传，建议传favicon地址 如：/favicon.ico
 
 ```html
 <div v-wechat-title="$route.meta.title" img-set="/static/logo.png"></div>
